@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         activity = this
 
         // share preferences
-        Preferences = getSharedPreferences("Thedzai", MODE_PRIVATE)
+        Preferences = getSharedPreferences("Thedzaii", MODE_PRIVATE)
         if(!Preferences.getBoolean(show_intro,true)){
             startActivity(Intent(applicationContext, DashBoardActivity::class.java))
             finish()
