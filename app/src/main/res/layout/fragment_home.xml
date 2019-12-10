@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_cart5">
+
+    <RelativeLayout
+            android:id="@+id/relative11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+        <LinearLayout
+                android:id="@+id/linear_FindDoctor"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button3"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/doctor1" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Find Doctor"
+                    android:textColor="#DD292323" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linear_Hospital"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/custom_button3"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hospital" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Hospital"
+                    android:textColor="#DD292323" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/relative12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative11">
+
+        <LinearLayout
+                android:id="@+id/linear_News"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button3"
+                android:orientation="vertical">
+
+            <ImageView
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/doctriod" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Doctriod"
+                    android:textColor="#DD292323" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linear_Appointment"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/custom_button3"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/appointment" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Appointment"
+                    android:textColor="#DD292323" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative12">
+
+        <LinearLayout
+                android:id="@+id/emergency"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button3"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emergency" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Emergency"
+                    android:textColor="#DD292323" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linear_Medicine_Shop"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/custom_button3"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/medi" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Medicine Shop"
+                    android:textColor="#DD292323" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                                             android:layout_width="match_parent"-->
+<!--                                             android:layout_height="match_parent">-->
+<!--    <TableLayout-->
+<!--            android:background="#FFF"-->
+<!--            xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--            xmlns:tools="http://schemas.android.com/tools"-->
+<!--            android:collapseColumns="2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:context=".IntroFragment.MainActivity">-->
+<!--        <TableRow-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--        >-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                    android:id="@+id/linear_FindDoctor"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:background="@drawable/custom_button3"-->
+
+<!--                    android:layout_width="140dp"-->
+<!--                    android:layout_height="140dp"-->
+<!--                    android:orientation="vertical"-->
+<!--            >-->
+<!--                <ImageView-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:src="@drawable/doctor1"-->
+<!--                        android:padding="0dp"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:layout_gravity="center"/>-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                          android:text="Find Doctor"-->
+<!--                          android:layout_marginTop="10dp"-->
+<!--                          android:layout_gravity="center"-->
+<!--                          android:textColor="#DD292323"-->
+<!--                />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+
+<!--                    android:id="@+id/linear_Doctriod"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:background="@drawable/custom_button3"-->
+<!--                    android:layout_width="140dp"-->
+<!--                    android:layout_height="140dp"-->
+<!--                    android:orientation="vertical"-->
+<!--            >-->
+<!--                <ImageView-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:src="@drawable/hospital"-->
+<!--                        android:padding="0dp"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:layout_gravity="center"/>-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                          android:text="pharmacy"-->
+<!--                          android:layout_marginTop="10dp"-->
+<!--                          android:layout_gravity="center"-->
+<!--                          android:textColor="#DD292323"-->
+<!--                />-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:background="@drawable/custom_button3"-->
+<!--                    android:layout_width="140dp"-->
+<!--                    android:layout_height="140dp"-->
+<!--                    android:orientation="vertical"-->
+<!--            >-->
+<!--                <ImageView-->
+
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:src="@drawable/doctriod"-->
+<!--                        android:padding="0dp"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:layout_gravity="center"/>-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                          android:text="Doctriod"-->
+<!--                          android:layout_marginTop="10dp"-->
+<!--                          android:layout_gravity="center"-->
+<!--                          android:textColor="#DD292323"-->
+<!--                />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                    android:id="@+id/linear_Appointment"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:background="@drawable/custom_button3"-->
+<!--                    android:layout_width="140dp"-->
+<!--                    android:layout_height="140dp"-->
+<!--                    android:orientation="vertical"-->
+<!--            >-->
+<!--                <ImageView-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:src="@drawable/appointment"-->
+<!--                        android:padding="0dp"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:layout_gravity="center"/>-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                          android:text="Appointment"-->
+<!--                          android:layout_marginTop="10dp"-->
+<!--                          android:layout_gravity="center"-->
+<!--                          android:textColor="#DD292323"-->
+<!--                />-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:background="@drawable/custom_button3"-->
+<!--                    android:layout_width="140dp"-->
+<!--                    android:layout_height="140dp"-->
+<!--                    android:orientation="vertical"-->
+<!--            >-->
+<!--                <ImageView-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:src="@drawable/emergency"-->
+<!--                        android:padding="0dp"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:layout_gravity="center"/>-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                          android:text="Emergency"-->
+<!--                          android:layout_marginTop="10dp"-->
+<!--                          android:layout_gravity="center"-->
+<!--                          android:textColor="#DD292323"-->
+<!--                />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:background="@drawable/custom_button3"-->
+<!--                    android:layout_width="140dp"-->
+<!--                    android:layout_height="140dp"-->
+<!--                    android:orientation="vertical"-->
+<!--            >-->
+<!--                <ImageView-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:src="@drawable/medi"-->
+<!--                        android:padding="0dp"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:layout_gravity="center"/>-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                          android:text="Medicine Shop"-->
+<!--                          android:layout_marginTop="10dp"-->
+<!--                          android:layout_gravity="center"-->
+<!--                          android:textColor="#DD292323"-->
+<!--                />-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--    </TableLayout>-->
+<!--</RelativeLayout>-->

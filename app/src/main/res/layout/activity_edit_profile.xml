@@ -1,0 +1,180 @@
+<RelativeLayout
+        android:background="@drawable/bg_cart3"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_toolbar"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
+    >
+        <RelativeLayout
+                android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="50dp" android:layout_height="50dp"
+                       android:src="@drawable/ic_left_white_24dp"
+                       android:id="@+id/backk"
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Edit Profile"
+                      android:textSize="24dp"
+                      android:textColor="@color/color_white"
+                      android:layout_marginLeft="60dp"
+                      android:id="@+id/txtNameee"
+            />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:layout_below="@id/toolbar"
+
+    >
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewAvatar_Edit"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/doctor1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+        />
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView_Camera_Edit"
+                android:src="@drawable/ic_photo_camera_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="120dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_below="@id/imageViewAvatar_Edit"
+                      android:layout_marginTop="30dp" android:id="@+id/linear1">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Name: "
+                      android:textSize="20dp"
+                      android:layout_marginLeft="10dp"/>
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="User Name"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="50dp"
+                      android:id="@+id/edtName_Profile"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_below="@id/linear1" android:id="@id/linearr2" android:weightSum="10"
+        android:orientation="horizontal">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="34dp"
+                          android:orientation="horizontal" android:layout_marginTop="10dp"
+                          android:id="@+id/linear2" android:layout_below="@+id/linear1"
+                          android:layout_weight="6">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Age: "
+                          android:textSize="20dp"
+                          android:layout_marginLeft="13dp"/>
+                <!--<NumberPicker android:layout_width="wrap_content" android:layout_marginLeft="10dp"-->
+                              <!--android:layout_height="match_parent" android:id="@+id/numberPicker">-->
+
+                <!--</NumberPicker>-->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginLeft="30dp"
+                          android:id="@+id/txtAgeee"
+                          android:text="8"
+                          android:textSize="20sp"  />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal" android:layout_marginTop="10dp"
+                          android:id="@+id/linear3" android:layout_below="@+id/linear1"
+                          android:layout_weight="4">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:text="Gender: "
+                          android:textSize="20dp"
+                          android:layout_marginLeft="0dp"/>
+                <Spinner android:layout_width="wrap_content" android:layout_height="match_parent"
+                         android:layout_marginLeft="10dp"
+                         android:id="@+id/spinner_Gender"
+                >
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:layout_marginTop="10dp"
+                      android:id="@+id/linear4" android:layout_below="@+id/linearr2">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Height: "
+                      android:textSize="20dp"
+                      android:paddingTop="10dp"
+                      android:paddingBottom="10dp"
+                      android:layout_marginLeft="10dp"/>
+            <!--<NumberPicker android:layout_width="wrap_content" android:layout_marginLeft="10dp"-->
+                          <!--android:layout_height="match_parent" android:id="@+id/numberPicker1">-->
+
+            <!--</NumberPicker>-->
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="130 Cm"
+                      android:textSize="20sp"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="50dp"
+                      android:id="@+id/txtHeight"
+            />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:layout_marginTop="10dp"
+                      android:id="@+id/linear5" android:layout_below="@+id/linear4">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Weight: "
+                      android:textSize="20dp"
+                      android:layout_marginLeft="10dp"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="90 Kg"
+                      android:textSize="20sp"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="50dp"
+                      android:id="@+id/txtWeight"
+            />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:layout_marginTop="10dp"
+                      android:id="@+id/linear6" android:layout_below="@+id/linear5">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Blood: "
+                      android:textSize="20dp"
+                      android:layout_marginLeft="10dp"/>
+            <Spinner android:layout_width="wrap_content" android:layout_height="match_parent"
+                     android:layout_marginLeft="10dp"
+                     android:id="@+id/spinner_Blood"
+            >
+            </Spinner>
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btnChange_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear6"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_button"
+                android:text="Change"
+                android:textColor="@color/color_white" />
+
+    </RelativeLayout>
+</RelativeLayout>

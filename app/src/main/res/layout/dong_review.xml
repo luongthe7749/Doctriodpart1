@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar_doctor_review" android:id="@+id/relative5"
+            tools:ignore="NotSibling">
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="35dp" android:layout_height="35dp"
+                android:src="@drawable/doctor1" android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="25dp"
+                android:id="@+id/image_doctor_review"/>
+        <TextView
+                android:text="Van The"
+                android:layout_width="wrap_content" android:textColor="@color/color1"
+                android:layout_height="wrap_content" android:id="@+id/txt_Ten_doctor_review"
+                android:textSize="14sp" android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"/>
+
+        <ImageView
+                android:id="@+id/image_dotss"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/three_dots" />
+        <TextView
+                android:text="26-09-2017"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_ngaythang_review"
+                android:textSize="10sp"
+                android:layout_marginTop="30dp" android:layout_marginLeft="60dp"/>
+        <TextView
+                android:text="26-09-201osdnkdasndkndksadakondsnsnkdksdnsaodkoasdnkaskdnsodnskodnkkondkonsonasokdskndasnkdnkoasndskoadnsankonkoskoandaskondkoasndnsknasokndaskokodkosadnkonkoaskonkodnko"
+                android:layout_width="match_parent"
+                android:layout_height="53dp" android:id="@+id/txt_binhluan_review"
+                android:textSize="12sp"
+                android:layout_below="@+id/txt_ngaythang_review"
+                android:layout_marginTop="10dp" android:paddingLeft="20dp" android:paddingBottom="10dp"
+                android:paddingRight="20dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

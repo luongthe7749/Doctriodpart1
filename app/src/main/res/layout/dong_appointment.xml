@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                                android:background="@null"
+                                             android:layout_height="wrap_content">
+    <RelativeLayout
+            android:background="@drawable/custom_button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+            >
+        <de.hdodenhof.circleimageview.CircleImageView android:layout_width="80dp" android:layout_height="80dp"
+                                                      android:src="@drawable/doctor1" android:layout_marginTop="10dp"
+                                                      android:layout_marginLeft="15dp"
+                                                      android:id="@+id/image_appointment_list"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Dr. Nguyen Van A" android:textColor="@color/color1" android:textSize="17sp"
+                  android:layout_toRightOf="@id/image_appointment_list" android:layout_marginTop="14dp"
+                  android:layout_marginLeft="15dp" android:id="@+id/tenbacsi_appointment_list" android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Psycho Doctor" android:textSize="17sp"
+                  android:layout_toRightOf="@id/image_appointment_list" android:layout_marginTop="3dp"
+                  android:layout_marginLeft="15dp" android:layout_below="@id/tenbacsi_appointment_list"
+                  android:id="@+id/khoabacsi_appointment_list"/>
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_below="@id/khoabacsi_appointment_list"
+                   android:layout_toRightOf="@id/image_appointment_list" android:layout_marginLeft="8dp"
+                   android:layout_marginTop="3dp"
+                   android:src="@drawable/ic_location_on_black_24dp" android:id="@+id/location"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Bach Mai Hospital" android:textSize="14sp"
+                  android:layout_toRightOf="@id/location" android:layout_marginTop="7dp"
+                  android:layout_marginLeft="0dp" android:layout_below="@id/khoabacsi_appointment_list"
+                  android:id="@+id/vitribacsi_appointment_list"
+                  android:textColor="@color/color_black"/>
+
+        <TextView
+                android:id="@+id/txt_ngay_appointment_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_appointment_list"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="5dp"
+                android:text="Date: 24/12/1999"
+                android:textColor="@color/color1"
+                android:textSize="14sp" />
+
+        <TextView
+                android:id="@+id/txt_gio_appointment_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_appointment_list"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:paddingBottom="5dp"
+                android:text="Time: 20:30 P.M"
+                android:textColor="@color/color1"
+                android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+    <!--<ImageView-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--/>-->
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_Avatar"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="menuItem"
+
+            android:src="@drawable/doctor1"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+            android:id="@+id/textViewTenAvt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_Avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="Hello"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFF"
+            android:textSize="25sp" />
+
+    <ImageView
+            android:id="@+id/imageView_Cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/ic_close_black_24dp"
+
+            tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>

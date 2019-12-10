@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/imageView_news_list"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/doctor01"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+    <TextView
+            android:id="@+id/textViewTitle_news_list"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="7dp"
+            android:layout_toRightOf="@id/imageView_news_list"
+            android:paddingBottom="7dp"
+            android:text="just hello world"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    <TextView
+            android:id="@+id/timee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5h"
+            android:paddingTop="5dp"
+            android:layout_below="@+id/textViewTitle_news_list"
+            android:layout_toRightOf="@id/imageView_news_list"
+            android:textSize="15dp"
+            android:layout_marginLeft="7dp"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| Tin Hot"
+            android:paddingTop="5dp"
+            android:textColor="#4CAF50"
+            android:layout_below="@+id/textViewTitle_news_list"
+            android:layout_toRightOf="@id/timee"
+            android:textSize="15dp"
+            android:layout_marginLeft="7dp"
+            />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_cart3"
+        tools:context=".Register_Activity">
+
+    <ImageView
+            android:id="@+id/imageView_Back_Forgot"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            app:srcCompat="@drawable/ic_left_black_24dp"
+            tools:ignore="VectorDrawableCompat"/>
+    <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color1"
+            android:textSize="30sp"
+            android:layout_below="@id/imageView_Back_Forgot"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We just need your register e-mail ID to send reset link"
+            android:layout_below="@id/txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="12dp"/>
+
+    <EditText android:layout_width="match_parent" android:layout_height="50dp"
+            android:id="@+id/editText_Email_Forgot"
+            android:layout_below="@id/txt"
+            android:layout_marginTop="65dp"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+            android:background="@drawable/custom_button6"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+
+    <Button
+            android:id="@+id/button_Reset_Pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/editText_Email_Forgot"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/custom_button"
+            android:text="Reset Password"
+            android:textAllCaps="false"
+            android:textColor="#FFFF" />
+
+</RelativeLayout>

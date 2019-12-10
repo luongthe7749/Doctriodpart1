@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="#E6EFF0">
+    <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:background="@drawable/custom_button6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+        <ImageView
+                android:id="@+id/imageView_HinhMedicine"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/doctor1" />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView_HinhMedicine"
+                android:id="@+id/textView_TenMedicine"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="3dp"
+                android:text="Thuốc rửa mắt- mũi Natri Clorid 0.9% Pharmedic"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+
+        <TextView
+                android:id="@+id/textView_ValueMedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:paddingTop="3dp"
+                android:text="$ 6"
+                android:textColor="#F18686"
+                android:textSize="7sp"
+                android:textStyle="bold" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:paddingTop="3dp"
+                android:text="đ"
+                android:textColor="#F18686"
+                android:textSize="7sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/textView_ValueMedicine"
+                android:layout_marginLeft="3dp"
+                />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

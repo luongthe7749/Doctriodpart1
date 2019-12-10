@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.doctriodpart1">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".Welcome">
+                        <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
+
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
+
+        </activity>
+        <activity android:name=".Album_User_Activity" />
+        <activity android:name=".Favorite_Doctor_Activity" />
+        <activity android:name=".Hospital_List" />
+        <activity android:name=".Content_Shop_Activity" />
+        <activity android:name=".Content_News_Activity" />
+        <activity
+                android:name=".Tab_Layout_News_Activity"
+                android:label="@string/title_activity_tab__layout__news_"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".Tab_Layout_Shop_Activity"
+                android:label="@string/title_activity_tab__layout__new_"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Register_Activity" />
+        <activity android:name=".IntroFragment.MainActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".GGMap2_Activity" />
+        <activity android:name=".GGMap_Activity" />
+        <activity android:name=".Review_Doctor_Activitty" />
+        <activity android:name=".Doctor_Photos_Activity" />
+        <activity android:name=".DoctorList_Activity" />
+        <activity
+                android:name=".NavigationActivity"
+                android:label="@string/title_activity_navigation"
+                android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+                android:name=".Edit_Profile_Activity"
+                android:label="Edit Profile"
+                android:theme="@style/MyTheme" />
+        <activity android:name=".DashBoardActivity" /> <!-- <meta-data android:name="com.facebook.sdk.ApplicationId" -->
+        <!-- android:value="@string/facebook_application_id"/> -->
+        <activity
+                android:name="com.facebook.FacebookActivity"
+                android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                android:label="@string/app_name" />
+        <activity
+                android:name="com.facebook.CustomTabActivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyC2r6bP2l_VBCLphl6O47yOELfkgFBjnfw" />
+    </application>
+
+</manifest>

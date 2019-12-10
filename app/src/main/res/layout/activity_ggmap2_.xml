@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_whiteee"
+        tools:context=".GGMap2_Activity">
+    <android.support.v7.widget.Toolbar
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_toolbar"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar_doctor"
+    >
+        <RelativeLayout
+                android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="50dp" android:layout_height="50dp"
+                       android:src="@drawable/ic_left_white_24dp"
+                       android:id="@+id/button2Back"
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Google Map"
+                      android:textSize="24dp"
+                      android:textColor="@color/color_white"
+                      android:layout_marginLeft="80dp"
+                      android:id="@+id/txtNameee"
+            />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+            android:id="@+id/textView7749"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Google Map"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            tools:visibility="invisible" />
+
+    <Button
+            android:background="@drawable/custom_buttom2"
+            android:textColor="@color/color_white"
+            android:text="Go To google map ->"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonGGMap"
+    android:layout_below="@+id/textView7749"/>
+
+    <ImageView
+            android:id="@+id/imageViewmapp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_above="@+id/textView7749"
+            android:layout_below="@+id/toolbar_doctor"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="9dp"
+            app:srcCompat="@drawable/doctor01" />
+</RelativeLayout>

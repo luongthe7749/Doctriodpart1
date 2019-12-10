@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Medicine App</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="app_name1">Login</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="facebook_application_id">1183231951873658</string>
+    <string name="fb_login_protocol_scheme">fb1183231951873658</string>
+
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc"></string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear
+        data
+    </string>
+    <string name="play_again">Play Again</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation">Home</string>
+    <string name="title_activity_tab__layout__new_">Tab_Layout_New_Activity</string>
+    <string name="tab_text_news1">Hot</string>
+    <string name="tab_text_news2">Global</string>
+    <string name="tab_text_news3">Tips for life</string>
+
+    <string name="tab_text_shop1">General</string>
+    <string name="tab_text_shop2">Health Care</string>
+    <string name="tab_text_shop3">Beauty</string>
+    <string name="title_activity_tab__layout__news_">Tab_Layout_News_Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_toolbar"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar_appointment_detail"
+    >
+        <RelativeLayout
+                android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="50dp" android:layout_height="50dp"
+                       android:src="@drawable/ic_left_white_24dp"
+                       android:id="@+id/backk_appointment_detail"
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Apointment Detail"
+                      android:textSize="24dp"
+                      android:textColor="@color/color_whiteee"
+                      android:layout_marginLeft="55dp"
+                      android:id="@+id/txtNameee"
+            />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/toolbar_appointment_detail"
+                    android:id="@+id/linear12"
+                    android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView android:layout_width="80dp" android:layout_height="80dp"
+                                                      android:src="@drawable/doctor1" android:layout_marginTop="10dp"
+                                                      android:layout_marginLeft="15dp"
+                                                      android:id="@+id/image_appointment_detail"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Dr. Nguyen Van A" android:textColor="@color/color1" android:textSize="17sp"
+                  android:layout_toRightOf="@id/image_appointment_detail" android:layout_marginTop="14dp"
+                  android:layout_marginLeft="15dp" android:id="@+id/tenbacsi_appointment_detail" android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Psycho Doctor" android:textSize="17sp"
+                  android:layout_toRightOf="@id/image_appointment_detail" android:layout_marginTop="3dp"
+                  android:layout_marginLeft="15dp" android:layout_below="@id/tenbacsi_appointment_detail"
+                  android:id="@+id/khoabacsi_appointment_detail"/>
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_below="@id/khoabacsi_appointment_detail"
+                   android:layout_toRightOf="@id/image_appointment_detail" android:layout_marginLeft="8dp"
+                   android:layout_marginTop="3dp"
+                   android:src="@drawable/ic_location_on_black_24dp" android:id="@+id/location"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Bach Mai Hospital" android:textSize="14sp"
+                  android:layout_toRightOf="@id/location" android:layout_marginTop="7dp"
+                  android:layout_marginLeft="0dp" android:layout_below="@id/khoabacsi_appointment_detail"
+                  android:id="@+id/vitribacsi_appointment_detail"
+                  android:textColor="@color/color_black"/>
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:padding="15dp"
+    android:layout_below="@+id/linear12" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp" android:layout_marginBottom="130dp" android:background="@drawable/custom_button1">
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_date_range_black_24dp"
+                android:id="@+id/img1"
+                />
+        <TextView
+                android:id="@+id/txt_Date_Appointment_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02- November- 2017"
+                android:layout_toRightOf="@id/img1"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/color_black"
+                />
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_gray"
+                android:layout_below="@+id/img1"
+                android:layout_marginTop="20dp"
+                android:id="@+id/view01"
+                />
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_access_time_black_24dp"
+                android:layout_below="@id/view01"
+                android:id="@+id/img2"
+                />
+        <TextView
+                android:id="@+id/txt_Time_Appointment_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1:00 AM"
+                android:layout_toRightOf="@id/img1"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:layout_below="@id/view01"
+                android:textColor="@color/color_black"
+                />
+
+        <TextView
+                android:id="@+id/servicee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Service"
+                android:textColor="@color/color1"
+                android:textSize="17sp" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_gray"
+                android:layout_below="@+id/servicee"
+                android:layout_marginTop="10dp"
+                android:id="@+id/view02"
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view02"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Weekly Checkup"
+                android:textColor="@color/color_black"
+            android:id="@+id/txt1"
+            android:textSize="16sp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view02"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="$50"
+                android:id="@+id/txt01"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_black"
+                android:textSize="16sp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="35 mins"
+                android:id="@+id/txt2"
+                android:textColor="@color/color1"
+                android:textSize="16sp" />
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_gray"
+                android:layout_below="@+id/txt2"
+                android:layout_marginTop="10dp"
+                android:id="@+id/view03"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view03"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Monthly Checkup"
+                android:id="@+id/txt3"
+                android:textColor="@color/color_black"
+                android:textSize="16sp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view03"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="$150"
+                android:id="@+id/txt02"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_black"
+                android:textSize="16sp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="35 mins"
+                android:id="@+id/txt4"
+                android:textColor="@color/color1"
+                android:textSize="16sp" />
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_gray"
+                android:layout_below="@+id/txt4"
+                android:layout_marginTop="10dp"
+                android:id="@+id/view04"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view04"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Total"
+                android:id="@+id/txt5"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view04"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="$200"
+                android:id="@+id/txt03"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button android:layout_width="match_parent" android:layout_height="46dp"
+            android:layout_alignParentBottom="true" android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp" android:background="@drawable/custom_button4"
+            android:text="Cancel Appointment" android:textAllCaps="false"
+            android:textColor="@color/com_facebook_likeboxcountview_border_color"
+            android:layout_marginBottom="45dp" android:id="@+id/button_cancel_appointment"/>
+
+</RelativeLayout>

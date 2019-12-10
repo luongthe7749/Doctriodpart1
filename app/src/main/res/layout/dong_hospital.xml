@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button4"
+            android:padding="5dp"
+            >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_hospital_list"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/doctor1" />
+
+        <TextView
+                android:id="@+id/tenbv_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/image_hospital_list"
+                android:layout_toLeftOf="@+id/relaaa"
+                android:layout_marginRight="8dp"
+                android:text="Dr. Nguyen Van A"
+                android:textColor="@color/color1"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/khoabv_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tenbv_list"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/image_hospital_list"
+                android:text="Psycho Doctor"
+                android:textSize="9sp" />
+
+        <ImageView
+                android:id="@+id/location"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/khoabv_list"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/image_hospital_list"
+                android:src="@drawable/ic_location_on_black_24dp" />
+
+        <TextView
+                android:id="@+id/vitribv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/khoabv_list"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/location"
+                android:text="Bach Mai Hospital"
+                android:textColor="@color/color_black"
+                android:textSize="9sp" />
+
+        <RelativeLayout
+                android:id="@+id/relaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp">
+
+            <ImageView
+                    android:id="@+id/direct"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_directions_black_24dp" />
+
+            <TextView
+                    android:id="@+id/khoangcach__favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/direct"
+                    android:text="3.5 Km"
+                    android:textSize="8sp" />
+
+            <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/direct"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_star_border_black_24dp" />
+
+            <TextView
+                    android:id="@+id/danhgia__favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/khoangcach__favorite"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/star"
+                    android:text="4.5"
+                    android:textColor="@color/color1"
+                    android:textSize="8dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

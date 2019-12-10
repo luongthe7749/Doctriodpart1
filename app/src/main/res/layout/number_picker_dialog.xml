@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="250dp" android:layout_height="390dp"
+                    android:background="#FFFF"
+    android:layout_centerInParent="true">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Age" android:textSize="20sp" android:textColor="#19769F" android:id="@+id/txtTitleDialog"
+        android:layout_centerHorizontal="true" android:layout_marginTop="30dp"/>
+        <NumberPicker android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                      android:layout_height="wrap_content" android:id="@+id/numberPicker"
+                      android:layout_centerInParent="true"
+        >
+        </NumberPicker>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="20sp"
+                  android:text=""
+                  android:id="@+id/txt_values_dialog"
+                  android:layout_below="@id/numberPicker"
+                  android:layout_centerHorizontal="true" android:textColor="#19769F"
+                  android:layout_marginTop="15dp"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Cancel" android:background="@drawable/custom_button"
+                android:textColor="@color/color_white"
+        android:layout_below="@id/txt_values_dialog"
+                android:id="@+id/btn_cancel_dialog" android:layout_marginTop="20dp"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="OK" android:background="@drawable/custom_button" android:textColor="@color/color_white"
+                android:layout_below="@id/txt_values_dialog" android:id="@+id/btn_ok_dialog" android:layout_toRightOf="@id/btn_cancel_dialog"
+        android:layout_marginLeft="70dp" android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

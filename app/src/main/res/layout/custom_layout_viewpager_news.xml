@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageee2"
+            />
+
+    <TextView
+            android:id="@+id/nameee"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@id/imageee2"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            android:text="oke ban oiiiii"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameee"
+            android:id="@+id/timeee"
+            android:text="2 hours ago"
+            android:paddingLeft="10dp"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameee"
+            android:layout_toRightOf="@id/timeee"
+            android:text="| Tin Hot"
+            android:textColor="#4CAF50"
+            android:paddingLeft="10dp"
+            />
+</RelativeLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Content_Shop_Activity">
+    <ScrollView
+            android:id="@+id/scrollBar_News_Global"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:scrollbars="none">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <RelativeLayout
+                android:id="@+id/rela001"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#85C4F7">
+
+            <ImageView
+                    android:id="@+id/back_content_shop"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_left_white_24dp" />
+            <ImageView android:layout_width="35dp" android:layout_height="35dp"
+                    android:src="@drawable/ic_shopping_cart_white_24dp"
+                    android:id="@+id/cart_medicine_shop"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="25dp"
+                    />
+
+            <TextView
+                    android:id="@+id/textView_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/back_content_shop"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Thuốc rửa mắt- mũi Natri Clorid 0.9%"
+                    android:textColor="@color/color_white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_below="@id/rela001"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_white" />
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/rela02"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:padding="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/custom_button7"
+            >
+
+        <ImageView
+                android:id="@+id/imageView_Hinh_Detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+                />
+        <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/share"
+                android:src="@drawable/share_blue"
+                android:layout_alignParentRight="true"
+
+                />
+
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/share"
+                android:button="@drawable/custom_chekbox_favorite_circle"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rela03"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rela02"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button4"
+            >
+
+        <TextView
+                android:id="@+id/textView_Old_Values"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView_Values"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="28.000"
+                android:textColor="@color/color_black"
+                android:textSize="18dp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView_Values"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="10dp"
+                android:text="đ"
+                android:textColor="@color/color_black"
+                android:textSize="18dp"
+                android:layout_toRightOf="@id/textView_Old_Values"
+
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="19,95 % Off"
+                android:textSize="18dp"
+                android:layout_toRightOf="@id/textView_Old_Values"
+                android:layout_marginLeft="15dp"
+                android:layout_above="@+id/textView_Values"
+                android:layout_marginBottom="10dp"
+                android:textColor="#B5FF0000"
+                />
+        <TextView
+                android:id="@+id/textView_Values"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23.000"
+                android:layout_alignParentBottom="true"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="đ"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_black"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/textView_Values"
+                android:layout_marginLeft="3dp"
+                />
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/custom_button8"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+            <TextView
+                    android:id="@+id/rela_AddtoCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Thêm vào giỏ hàng"
+                    android:textColor="@color/color_whiteee"
+                    android:textSize="16dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rela04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button4"
+            android:layout_below="@+id/rela03"
+            android:padding="8dp"
+            >
+<TextView
+        android:id="@+id/textVieww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi tiết sản phẩm: "
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+        <TextView
+                android:id="@+id/textView_Detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textVieww"
+                android:textSize="16sp"
+                android:text="Thuốc cốm tiêu hóa Xitrina điều trị trong trường hợp trẻ em sơ sinh bị ọc sữa, ăn không tiêu, người lớn đau dạ dày, ói mửa, chống thừa Acid trong dạ dày"
+                android:layout_marginTop="4dp"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rela05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button4"
+            android:layout_below="@+id/rela04"
+            android:padding="8dp"
+            >
+        <TextView
+                android:id="@+id/textViewww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thành Phần: "
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+        <TextView
+                android:id="@+id/textView_Element"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewww"
+                android:textSize="16sp"
+                android:text="Mỗi chai chứa:
+Hoạt chất chính: Hỗn hợp muối natri citrat 9,16g. ● Tá dược : Màu patent, Đường trắng."
+                android:layout_marginTop="4dp"
+                />
+
+        <TextView
+                android:id="@+id/textViewwww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đối Tượng Sử Dụng: "
+                android:textColor="@color/color_black"
+                android:layout_below="@id/textView_Element"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                />
+
+        <TextView
+                android:id="@+id/textView_Object"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewwww"
+                android:textSize="16sp"
+                android:text="Người lớn: 2- 4 muỗng cà phê/ lần x 2-3 lần /ngày.
+
+Trẻ em trên 1tuổi : 1- 2 muỗng cà phê/ lần x 2-3 lần/ ngày.
+
+Trẻ em dưới 1 tuổi: 1/4- 1/2 muỗng cà phê/ lần x 2-3 lần/ngày.
+
+Hòa vào nước hoặc sữa để uống, nên dùng sau bữa ăn."
+                android:layout_marginTop="4dp"
+                />
+
+        <TextView
+                android:id="@+id/textViewwwww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bảo Quản: "
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/textView_Object"
+                android:layout_marginTop="8dp"
+                />
+
+        <TextView
+                android:id="@+id/textView_Protect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewwwww"
+                android:textSize="16sp"
+                android:text="Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp, nhiệt độ dưới 30 độ C
+
+Thận Trọng:
+
+Thuốc Xitrina không dùng cho những bệnh nhân phải tuân thủ nghiêm ngặt chế độ kiêng muối và bệnh nhân suy thận nặng."
+                android:layout_marginTop="4dp"
+                />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

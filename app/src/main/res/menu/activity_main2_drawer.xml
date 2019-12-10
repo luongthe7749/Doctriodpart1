@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view"
+>
+    <group
+            android:id="@+id/item1"
+            android:checkableBehavior="single">
+                <item
+                        android:id="@+id/menu_home"
+                        android:title="Home"
+                />
+    </group>
+    <group
+            android:id="@+id/item2"
+            android:checkableBehavior="single">
+                <item
+                        android:id="@+id/menu_drug"
+                        android:title="Gallery"
+                />
+    </group>
+    <group
+            android:id="@+id/item3"
+            android:checkableBehavior="single">
+        <item
+                android:id="@+id/menu_service"
+
+                android:title="Favorite"/>
+    </group>
+
+    <group
+            android:id="@+id/item4"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/menu_dashboard"
+                android:title="Cart"/>
+    </group>
+    <group
+            android:id="@+id/item5"
+            android:checkableBehavior="single">
+            <item
+                    android:id="@+id/menu_profile"
+                    android:title="Profile"/>
+    </group>
+    <group
+            android:id="@+id/item6"
+            android:checkableBehavior="single">
+            <item
+                    android:id="@+id/menu_logout"
+                    android:title="Logout"/>
+        </group>
+
+</menu>

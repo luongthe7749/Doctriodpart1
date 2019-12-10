@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/bg_cart3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_toolbar"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar_doctor2"
+            >
+        <RelativeLayout
+                android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="50dp" android:layout_height="50dp"
+                    android:src="@drawable/ic_left_white_24dp"
+                    android:id="@+id/backk_doctor_info"
+                    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Personal Infomation"
+                    android:textSize="24dp"
+                    android:textColor="@color/color_white"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/txtNameee"
+                    />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_doctor2" android:id="@+id/relative2">
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp" android:layout_height="80dp"
+                android:src="@drawable/doctor1" android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="25dp"
+                android:id="@+id/image_doctor_dialog"/>
+        <TextView
+                android:text="Dr. Luong Van The"
+                android:layout_width="wrap_content" android:textColor="@color/color1"
+                android:layout_height="wrap_content" android:id="@+id/txt_Ten_doctor_dialog"
+                android:textSize="20dp" android:layout_marginLeft="120dp"
+                android:layout_marginTop="27dp" />
+        <TextView
+                android:text="Rang Ham Mat"
+                android:textColor="@color/color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textViewKhoa_info"
+                android:textSize="15dp"
+                android:layout_marginTop="57dp" android:layout_marginLeft="120dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_below="@id/relative2" android:id="@+id/relative3">
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#C5C3C3"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="17sp"
+                android:text="About" android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:textStyle="bold"
+                android:id="@+id/about" android:textColor="@color/color_black"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:textColor="@color/color_black"
+                android:layout_marginLeft="15dp" android:layout_below="@+id/about"
+                android:text="is a good doctor with a lot of attributes for medical of country
+"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_below="@id/relative3" android:id="@+id/relative4">
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#C5C3C3"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="17sp"
+                android:text="Andress and Timing" android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:textStyle="bold"
+                android:id="@+id/andress_timing" android:textColor="@color/color_black"
+                />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on_black_24dp" android:layout_below="@id/andress_timing" android:id="@+id/locationn"
+                android:layout_marginLeft="15dp" android:layout_marginTop="10dp"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/andress_timing"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/andresssss"
+                android:textColor="@color/color_black"
+                android:layout_toRightOf="@+id/locationn"
+                android:text="Bach Mai Hospital" />
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/ic_access_time_black_24dp" android:layout_below="@id/locationn" android:id="@+id/time"
+                android:layout_marginLeft="15dp" android:layout_marginTop="10dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="7:30 a.m to 4:00 pm" android:layout_below="@id/locationn" android:layout_toRightOf="@+id/time"
+                android:layout_marginTop="12dp" android:layout_marginLeft="8dp" android:layout_marginBottom="20dp" android:textColor="@color/color_black"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_below="@id/relative4" android:id="@+id/relative5">
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#C5C3C3"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="17sp"
+                android:text="Certification" android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:textStyle="bold"
+                android:id="@+id/certification" android:textColor="@color/color_black"
+                />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/ic_certification_24dp" android:layout_below="@id/certification" android:id="@+id/certification1"
+                android:layout_marginLeft="15dp" android:layout_marginTop="10dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="BAMS" android:layout_below="@id/certification" android:layout_toRightOf="@+id/certification1"
+                android:layout_marginTop="12dp" android:layout_marginLeft="8dp" android:textColor="@color/color_black"/>
+
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/ic_certification_24dp" android:layout_below="@id/certification1" android:id="@+id/certification2"
+                android:layout_marginLeft="15dp" android:layout_marginTop="10dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="MBBS" android:layout_below="@id/certification1" android:layout_toRightOf="@+id/certification2"
+                android:layout_marginTop="12dp" android:layout_marginLeft="8dp" android:layout_marginBottom="20dp" android:textColor="@color/color_black"/>
+    </RelativeLayout>
+</RelativeLayout>

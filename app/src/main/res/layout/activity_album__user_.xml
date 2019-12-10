@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Album_User_Activity">
+        <android.support.v7.widget.Toolbar
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_toolbar"
+                android:theme="?attr/actionBarTheme"
+                android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar_doctor_photos"
+                >
+            <RelativeLayout
+                    android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="50dp" android:layout_height="50dp"
+                        android:src="@drawable/ic_left_white_24dp"
+                        android:id="@+id/backk_doctor_photos"
+                        />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Photos"
+                        android:textSize="24dp"
+                        android:textColor="@color/color_white"
+                        android:layout_marginLeft="88dp"
+                        android:id="@+id/txtNameee"
+                        />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                    android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="45dp" android:layout_height="45dp"
+                        android:src="@drawable/ic_add_black_24dp"
+                        android:id="@+id/add_doctor_photos"
+                        android:layout_marginLeft="120dp"
+                        />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    <ImageView
+            android:id="@+id/emptyy"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+        android:layout_below="@id/toolbar_doctor_photos"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/collection_empty"
+            android:visibility="invisible"/>
+        <GridView
+                android:layout_below="@id/toolbar_doctor_photos"
+                android:id="@+id/gridView_Doctor_Photo"
+                android:numColumns="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
